@@ -25,7 +25,7 @@ function rederProduct() {
         <div class="item">
             <img src="${JsonListProduct[i].image}"
             alt="">
-            <h4>${JsonListProduct[i].name}</h4>
+            <h4>${JsonListProduct[i].nameProduct}</h4>
             <span>$${Number(JsonListProduct[i].price.substr(0,1)).toFixed(2)}-$${Number(JsonListProduct[i].price.substr(2,2)).toFixed(2)}  </span>
          </div> `
     }
