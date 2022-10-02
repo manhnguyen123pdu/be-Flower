@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',function(){
+
     function shownav() {
         document.querySelector('.header__overlay').classList.add('shownav')
     }
@@ -33,5 +33,4 @@ document.addEventListener('DOMContentLoaded',function(){
         }
     }
     
-    rederProduct()
-},false)
+    // rederProduct()
