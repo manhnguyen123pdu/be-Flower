@@ -33,3 +33,11 @@ function rederProduct() {
 }
 
 rederProduct()
+
+
+
+
+function thu(){
+    document.querySelector('.order').innerHTML='dmwefirefr4wegt54ht6t6t6t6t6t6t6t6t6t6t6t6t6t6t6t6t6'
+}
+thu()
