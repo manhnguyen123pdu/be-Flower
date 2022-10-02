@@ -1,0 +1,17 @@
+@mixin fontsize($fs,$fw,$fcolor) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fcolor;
+}
+
+@mixin respon($screen) {
+    @if(map-has-key($map: $breadpoint, $key:$screen )){
+        $value: map-get($map: $breadpoint, $key:$screen );
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{
+        @warn "sai "
+    }
+}

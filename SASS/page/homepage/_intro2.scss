@@ -1,0 +1,79 @@
+.intro2 {
+    background-color: #134845;
+
+    .intro2__content {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        .item {
+            width: 49%;
+            position: relative;
+            &:hover .overlay__item {
+                transform: scale(1);
+                opacity: 1;
+                transition: 0.5s;
+            }
+            .overlay__item {
+                transform: scale(0);
+                opacity: 0;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background-color: #5e9b2174;
+                transition: 0.5s;
+                .overlay__item__content {
+                    img {
+                        display: block;
+                        width: 120px;
+                        margin: auto;
+                    }
+                    p {
+                        margin-top: 15px;
+                        font-family: "DM Sans", sans-serif;
+                        @include fontsize(24px, normal, white);
+                        text-align: center;
+                    }
+                }
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    @include respon(medium) {
+        .intro2__content {
+            flex-direction: column;
+            align-items: center;
+            .item {
+                width: 70%;
+                margin-top: 20px;
+            }
+        }
+    }
+    @include respon(small) {
+        .intro2__content {
+            flex-direction: column;
+            align-items: center;
+            .item {
+                width: 100%;
+                margin-top: 20px;
+                .overlay__item {
+                    .overlay__item__content {
+                        img {
+                            width: 80px;
+                        }
+                        P{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
