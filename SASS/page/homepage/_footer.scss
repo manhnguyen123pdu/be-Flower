@@ -1,0 +1,105 @@
+footer {
+    .footer__content {
+        max-width: 1220px;
+        margin: auto;
+        padding: 70px 20px;
+        background-image: url(https://themes.muffingroup.com/be/flower2/wp-content/uploads/2021/04/flower2-footer-bg.png);
+        background-size: cover;
+        background-position: center;
+        .footer__top {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            .footer__top__left {
+                flex: 1;
+                img {
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-family: "DM Sans", sans-serif;
+                    @include fontsize(15px, 500, rgb(125, 118, 118));
+                    line-height: 25px;
+                }
+            }
+            .footer__top__mid {
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    padding: 30px 0;
+                    @include fontsize(40px, normal, #272523);
+                    font-family: "Elsie", cursive;
+                }
+                p {
+                    @include fontsize(18px, 500,#67AA25);
+                    line-height: 25px;
+                }
+            }
+            .footer__top__right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                a{
+                    display: block;
+                    padding: 5px 0;
+                    @include fontsize(18px, 500,#67AA25);
+                    line-height: 25px;
+                    text-decoration: none;
+                    i{
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+        .footer__bottom{
+            margin-top: 40px;
+            padding:  0 20px;
+            a{
+                display: block;
+                text-align: center;
+                @include fontsize(18px, 500, rgb(175, 172, 172));
+                padding: 5px 0;
+                text-decoration: none;
+            }
+        }
+    }
+    @include respon(large){
+        .footer__content{
+            .footer__top{
+                .footer__top__mid{
+                    h3{
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+    }
+    @include respon(medium){
+        .footer__content{
+            padding: 20px 0;
+            .footer__top{
+                padding: 30px;
+                flex-direction: column;
+                .footer__top__left{
+                }
+                .footer__top__mid{
+                   padding: 50px 0;
+                   h3{
+                    font-size: 25px;
+                   }
+                }
+                .footer__top__right{
+                   
+                }
+            }
+            .footer__bottom{
+                a{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

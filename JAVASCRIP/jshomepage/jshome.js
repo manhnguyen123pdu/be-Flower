@@ -38,9 +38,3 @@ function rederProduct() {
 
 rederProduct()
 
-function thu(){
-    console.log('ham thu');
-}
-thu()
-
-
